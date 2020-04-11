@@ -1,0 +1,29 @@
+plugins {
+    id 'org.jetbrains.kotlin.jvm' version "$kotlin_version"
+}
+
+group 'org.user5145'
+version "$project_version"
+
+repositories {
+    mavenLocal()
+    jcenter()
+    maven { url "https://kotlin.bintray.com/ktor" }
+}
+
+dependencies {
+    api "org.jetbrains.kotlin:kotlin-stdlib"
+    api group: 'com.zaxxer', name: 'HikariCP', version: "$hikaricp_version"
+    api group: 'com.h2database', name: 'h2', version: "$h2_version"
+    api "io.github.microutils:kotlin-logging:$kotlin_logging_version"
+    implementation "org.jetbrains.exposed:exposed-core:$exposed_version"
+    implementation group: 'org.jetbrains.exposed', name: 'exposed-jdbc', version: "$exposed_version"
+    testApi group: 'org.jetbrains.kotlin', name: 'kotlin-test-junit', version: "$kotlin_version"
+}
+
+compileKotlin {
+    kotlinOptions.jvmTarget = "11"
+}
+compileTestKotlin {
+    kotlinOptions.jvmTarget = "11"
+}

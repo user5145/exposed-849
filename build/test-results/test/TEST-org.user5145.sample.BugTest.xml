@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="org.user5145.sample.BugTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2020-04-11T09:27:56" hostname="WORKSPACE-WIN10" time="0.763">
+  <properties/>
+  <testcase name="testCreate" classname="org.user5145.sample.BugTest" time="0.763"/>
+  <system-out><![CDATA[null
+]]></system-out>
+  <system-err><![CDATA[SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+]]></system-err>
+</testsuite>
